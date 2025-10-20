@@ -1,0 +1,72 @@
+Module main()
+	//declarations
+	Declare Integer menuSelection
+	Declare String distance
+	Declare String mass
+	Declare String surfTemp
+	
+	Call displayMenu()
+	While menuSelection != 5
+		Select menuSelection
+			Case 1:
+				Display "Mercury: "
+				distnace = "57.9 million kilometers"
+				mass = "3.31 x 10^23kg"
+				surfTemp = "-173 to 430 degrees celsius"
+
+			Case 2:
+				Display "Venus: "
+				distnace = "108.2 million kilometers"
+				mass = "4.87 × 10^24kg"
+				surfTemp = "472 degrees Celsius"
+
+			Case 3:
+				Display "Earth: "
+				distnace = "149.6 million kilometers"
+				mass = "5.967 × 10^24kg"
+				surfTemp = "–50 to 50 degrees Celsius"
+
+			Case 4:
+				Display "Mars: "
+				distnace = "227.9 million kilometersa"
+				mass = "0.6424 × 10^24kg"
+				surfTemp = "–140 to 20 degrees Celsius"
+
+		End Select
+		Call modDisplay()
+	End While
+End Module
+
+Module displayMenu()
+	//Will show the menu, will continue if 5 is entered, and will error out if an invalid input is selected
+	Display "Select a Planet "
+	Display 
+	Display "1. Mercury "
+	Display "2. Venus "
+	Display "3. Earth "
+	Display "4. Mars "
+	Display "5. Exit the program " 
+	Display
+	
+	Display "Enter your selection. "
+	Input menuSelection
+	
+	While menuSelection < 1 Or menuSelection > 5
+		Display "ERROR: Invalid input"
+		Display "Please enter valid input"	
+		Input menuSelection
+	End While
+End Module
+
+Module modDisplay()
+	Display "Average distance from the sun: "
+	Display distance
+	Display "Mass: "
+	Display mass
+	Display "Surface temperature: "
+	Display surfTemp
+End Module
+
+	
+		
+
