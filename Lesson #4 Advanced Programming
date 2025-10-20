@@ -1,3 +1,29 @@
+Module Main()
+	Declare Car carObj
+	Set carObj = New Car
+	Call Accel()
+	Call Decel()
+End Module
+
+Module Accel()
+	Declare Integer count
+	Set count = 5
+	Do
+		Display "You current speed is " 
+		Display carObj.getAccelerate(speed)
+	Until count == 0
+End Module
+
+Module Decel()
+	Declare Integer count
+	Set count = 5
+	Do
+		Display "You current speed is " 
+		Display carObj.getBrake(speed)
+	Until count == 0
+End Module 
+
+
 Class Car
 	//Field decs
 	Private Integer yearModel
