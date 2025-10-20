@@ -1,3 +1,5 @@
+// This pseudocode takes users input and outputs a BMI index
+
 // Display "What is your weight?"
 // Input weight
 // Display "What is your height"
