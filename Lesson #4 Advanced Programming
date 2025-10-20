@@ -1,0 +1,37 @@
+Class Car
+	//Field decs
+	Private Integer yearModel
+	Private String make
+	Private Integer speed
+
+	//Constructer
+	Public Module CarInfo(Integer yearMod, String Brand, Integer Pace)
+		Set yearModel = yearMod
+		Set make = Brand
+
+		Set speed = 0
+	End Module
+	
+	//accessors
+	Public Function getYearModel()
+		Return yearModel
+	End Function
+
+	Public Function getMake()
+		Return make
+	End Function
+
+	Public Function getSpeed()
+		Return speed
+	End Function
+
+	
+	//methods
+	Public Module Accelerate(speed)
+		Set speed = speed + 5
+	End Module
+
+	Public Module Brake(speed)
+		Set speed = speed - 5
+	End Module
+End Class
