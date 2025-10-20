@@ -1,0 +1,22 @@
+// This pseduocode would calculate the amount of calories in an input food item, then output weather the food was lowfat or not. 
+
+Display “How many fat grams in food item?”
+Input fatgrams
+While fatgrams < 0
+	Display “The number you entered is invalid”
+	Display “How many fat grams in food item”
+	Input fatgrams
+End while
+
+Display “How many calories in food item?”
+Input cals
+While cals < 0 or cals > fatgrams * 9
+	Display “The number you entered is invalid”
+	Display “How many calories in food item”
+	Input cals
+End while
+
+Set perCalOfFat = fatgrams * 9 ÷ cals
+If perCalOfFat >= 0.3
+	Display “Food is lowfat”
+End If
