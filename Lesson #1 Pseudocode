@@ -1,0 +1,33 @@
+// Display "What is your weight?"
+// Input weight
+// Display "What is your height"
+// Input height
+// Set BMI = weight × 703 ÷ height^2
+// Display "Your BMI is: "
+// Display BMI
+
+Module main()
+	//Declaring global variables
+	Declare global integer bmi
+	Declare global integer weight
+	Declare global integer height
+	
+	display “Input weight: ”
+	Input weight
+	Display “Input height: ”
+	Input height
+
+	Call calculate()
+
+	Display "The BMI is: "
+	Display bmi
+End module
+
+Module calculate()
+	//Declaring local variables
+	Declare integer heiSQ
+
+	//Calculating BMI = Weight × 703 ÷ Height^2
+	height^2 = heiSQ
+	weight*703/heiSQ = bmi
+End module
